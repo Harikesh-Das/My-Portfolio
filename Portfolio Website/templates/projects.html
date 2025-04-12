@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="projects">
+    <h1 class="page-title">My Projects</h1>
+    <p class="page-description">Here's a collection of my recent work. Each project showcases different skills and technologies.</p>
+    
+    <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="aiml">AI/ML</button>
+        <button class="filter-btn" data-filter="app">Applications</button>
+    </div>
+    
+    <div class="projects-grid">
+        <div class="project-card" data-category="web">
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='towfiqu-barbhuiya-jpqyfK7GB4w-unsplash.jpg') }}" alt="Project 1">
+            </div>
+            <div class="project-info">
+                <h3>E-commerce Website</h3>
+                <p>A fully responsive e-commerce platform built with Flask and MySQL</p>
+                <div class="project-tags">
+                    <span class="tag">Flask</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+                <div class="project-links text-center">
+                    <a href="https://github.com/Harikesh-Das" class="btn small-btn"><i class="fab fa-github"></i> Source Code</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-card" data-category="aiml">
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='gilbert-ng-ZLaJPFHR_8I-unsplash.jpg') }}" alt="Project 2">
+            </div>
+            <div class="project-info">
+                <h3>Loan Approval Prediction</h3>
+                <p>Loan Approval Prediction using Supervised Learning</p>
+                <div class="project-tags">
+                    <span class="tag">Pandas/Pyplot</span>
+                    <span class="tag">Scikit-Learn</span>
+                    <span class="tag">HTML/CSS/JS</span>
+                </div>
+                <div class="project-links text-center">
+                    <a href="https://github.com/Harikesh-Das" class="btn small-btn"><i class="fab fa-github"></i> Source Code</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-card" data-category="app">
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='eden-constantino-iJg1YzsEfqo-unsplash.jpg') }}" alt="Project 3">
+            </div>
+            <div class="project-info">
+                <h3> AI based Task Management App</h3>
+                <p>An application for managing tasks and projects with team collaboration features, all with the help of AI</p>
+                <div class="project-tags">
+                    <span class="tag">Kotlin</span>
+                    <span class="tag">RESTful API</span>
+                    <span class="tag">Scikit-Learn</span>
+                </div>
+                <div class="project-links text-center">
+                    <a href="https://github.com/Harikesh-Das" class="btn small-btn"><i class="fab fa-github"></i> Source Code</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-card" data-category="aiml">
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='assad-tanoli-NyEcJXFOz6A-unsplash.jpg') }}" alt="Project 4">
+            </div>
+            <div class="project-info">
+                <h3>Real Time American Sign Language Detection</h3>
+                <p>An online interface that can dectect sign alphabets in ASL</p>
+                <div class="project-tags">
+                    <span class="tag">MediaPipe</span>
+                    <span class="tag">OpenCV</span>
+                    <span class="tag">PostgreSQL</span>
+                </div>
+                <div class="project-links text-center">
+                    <a href="https://github.com/Harikesh-Das" class="btn small-btn"><i class="fab fa-github"></i> Source Code</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="aiml">
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='evan-aker-5mELnm56dXQ-unsplash.jpg') }}" alt="Project 5">
+            </div>
+            <div class="project-info">
+                <h3>Real Time Road Anomaly Detection</h3>
+                <p>A deep learning model that can dectect road anomalies like: potholes, cracks etc and nortify it to the municipality.</p>
+                <div class="project-tags">
+                    <span class="tag">YOLOv8</span>
+                    <span class="tag">OpenCV</span>
+                    <span class="tag">Flask/PostgreSQL</span>
+                </div>
+                <div class="project-links text-center">
+                    <a href="https://github.com/Harikesh-Das" class="btn small-btn"><i class="fab fa-github"></i> Source Code</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card" data-category="web">
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='Screenshot 2025-04-12 173126.png') }}" alt="Project 6">
+            </div>
+            <div class="project-info">
+                <h3>Personal Portfolio</h3>
+                <p>My Personal Portfolio Website.</p>
+                <div class="project-tags">
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Flask/PostgreSQL</span>
+                </div>
+                <div class="project-links text-center">
+                    <a href="https://github.com/Harikesh-Das" class="btn small-btn"><i class="fab fa-github"></i> Source Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 

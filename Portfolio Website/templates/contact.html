@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="contact">
+    <h1 class="page-title">Contact Me</h1>
+    <p class="page-description">Have a question or want to work together? Feel free to reach out!</p>
+    
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>harikeshdas555@gmail.cpm</p>
+            </div>
+            
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <h3>Phone</h3>
+                <p>+91 8886787108</p>
+            </div>
+            
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Location</h3>
+                <p>Visakhapatnam, India</p>
+            </div>
+            
+            <div class="social-links-contact">
+                <h3>Connect With Me</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/Harikesh-Das" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/harikeshdas/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/harikeshdas1/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-form">
+            <h2>Send Me a Message</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %} 
