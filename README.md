@@ -29,7 +29,7 @@ To see a live preview of the site, run the Flask application and navigate to `ht
    cd portfolio-website
    ```
 
-3. Create a virtual environment ( only if you have OCD else you can run it directly, why waste env's XD):
+3. Create a virtual environment ( only if you have OCD else move to step 5, why waste env's XD):
    ```
    python -m venv venv
    ```
